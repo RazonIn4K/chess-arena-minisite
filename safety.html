@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Safety & Community - Chess Arena</title>
+    <meta name="description" content="Chess Arena community guidelines and safety policy. Fair play, fast games, zero gatekeeping."/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "midnight-navy": "#0D1B2A",
+                        "lichess-slate": "#415A77",
+                        "electric-teal": "#00C6AE",
+                        "tactical-gold": "#F8D57E",
+                        "alert-coral": "#FF6F61",
+                    },
+                    fontFamily: {
+                        "space-grotesk": ["Space Grotesk", "sans-serif"],
+                        "inter": ["Inter", "sans-serif"],
+                        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        'neon-glow': '0 0 5px #00C6AE, 0 0 10px #00C6AE, 0 0 20px #00C6AE, 0 0 40px #00C6AE',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Simple Analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+</head>
+<body class="bg-midnight-navy font-inter text-[#F5F7FA]">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-midnight-navy overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
+            <header class="px-4 md:px-10 lg:px-40 py-6 border-b border-lichess-slate">
+                <div class="flex justify-between items-center max-w-[960px] mx-auto">
+                    <a href="index.html" class="font-space-grotesk text-2xl font-bold text-electric-teal hover:opacity-80 transition-opacity">Chess Arena</a>
+                    <nav class="flex gap-6">
+                        <a href="index.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Home</a>
+                        <a href="assets.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Assets</a>
+                        <a href="video.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Video</a>
+                        <a href="safety.html" class="font-jetbrains-mono text-electric-teal">Safety</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-10">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                    <!-- Page Header -->
+                    <div class="mb-10">
+                        <h1 class="font-space-grotesk text-5xl font-bold leading-tight tracking-[-0.033em] text-white mb-4">
+                            Safety & Community
+                        </h1>
+                        <p class="font-inter text-lg leading-normal text-[#F5F7FA]/80">
+                            Fair play, fast games, zero gatekeeping. We're here to make chess + gaming more fun.
+                        </p>
+                    </div>
+
+                    <!-- Community Principles -->
+                    <section class="mb-12 rounded-lg border border-electric-teal/30 bg-lichess-slate/10 p-6">
+                        <h2 class="font-space-grotesk text-2xl font-bold text-electric-teal mb-4">
+                            Our Community Principles
+                        </h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-tactical-gold mb-2">Competitive but Inclusive</h3>
+                                <p class="font-inter text-[#F5F7FA]/80">
+                                    Celebrate skill and improvement, not elitism. We say "Get better" not "git gud." Acknowledge frustration without being toxic.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-tactical-gold mb-2">Nerdy but Accessible</h3>
+                                <p class="font-inter text-[#F5F7FA]/80">
+                                    Use gaming/chess terms, but explain them. Assume smart audience, not expert audience.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-tactical-gold mb-2">Playful but Respectful</h3>
+                                <p class="font-inter text-[#F5F7FA]/80">
+                                    Memes and humor are welcome. No punching down—no skill-shaming, no gatekeeping. Self-aware about the absurdity of "chess MOBA."
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Zero Tolerance Policy -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Zero Tolerance</h2>
+                        <div class="rounded-lg border border-alert-coral/50 bg-alert-coral/10 p-6">
+                            <p class="font-inter text-lg text-white mb-4">
+                                Hate, harassment, and cheating have <span class="font-bold">no place in our community</span>. We will act swiftly on reports.
+                            </p>
+                            <ul class="font-inter text-[#F5F7FA]/90 space-y-2">
+                                <li>• <span class="text-alert-coral font-bold">Hate speech</span> — Instant ban, no warnings</li>
+                                <li>• <span class="text-alert-coral font-bold">Harassment</span> — Including targeted abuse, doxxing, brigading</li>
+                                <li>• <span class="text-alert-coral font-bold">Cheating</span> — Using exploits, bots, or unauthorized tools</li>
+                                <li>• <span class="text-alert-coral font-bold">Gatekeeping</span> — "Only [X rating]+ will understand" rhetoric</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Community Guidelines -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Community Guidelines</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-white mb-3">✅ Do This</h3>
+                                <ul class="font-inter text-sm text-[#F5F7FA]/80 space-y-2">
+                                    <li>• Use gender-inclusive language ("players," "folks")</li>
+                                    <li>• Welcome newcomers and explain jargon</li>
+                                    <li>• Share tactical tips and celebrate improvement</li>
+                                    <li>• Report bugs privately to playtest team</li>
+                                    <li>• Disclose sponsored/paid content (FTC compliance)</li>
+                                </ul>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-white mb-3">❌ Don't Do This</h3>
+                                <ul class="font-inter text-sm text-[#F5F7FA]/80 space-y-2">
+                                    <li>• Use toxic slang ("hardstuck," "skill issue" unironically)</li>
+                                    <li>• Shame players for rating or experience</li>
+                                    <li>• Share unreleased builds or invite codes</li>
+                                    <li>• Stream snipe or intentionally disrupt matches</li>
+                                    <li>• Use gendered or exclusive language ("chess bros")</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- In-Game Conduct -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">In-Game Conduct</h2>
+                        <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                            <ul class="font-inter text-[#F5F7FA]/80 space-y-3">
+                                <li>
+                                    <span class="text-tactical-gold font-bold">Fair Play:</span> No exploits, bots, or unauthorized tools. We log all matches for review.
+                                </li>
+                                <li>
+                                    <span class="text-tactical-gold font-bold">Matchmaking:</span> Respect queues—no stream sniping or targeted harassment.
+                                </li>
+                                <li>
+                                    <span class="text-tactical-gold font-bold">Bug Reports:</span> Found an issue? Report privately via <a href="mailto:playtest@chessarena.gg" class="text-electric-teal hover:underline">playtest@chessarena.gg</a>
+                                </li>
+                                <li>
+                                    <span class="text-tactical-gold font-bold">Content Creation:</span> Streams and videos are welcome! Tag @chessarenagame for featuring.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Report Tools -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Report & Support</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="rounded-lg border border-electric-teal/50 bg-lichess-slate/20 p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-electric-teal mb-3">Report an Issue</h3>
+                                <p class="font-inter text-sm text-[#F5F7FA]/80 mb-4">
+                                    See hate, harassment, or cheating? Report it immediately.
+                                </p>
+                                <ul class="font-inter text-sm text-[#F5F7FA]/80 space-y-2">
+                                    <li>• Email: <a href="mailto:playtest@chessarena.gg" class="text-electric-teal hover:underline">playtest@chessarena.gg</a></li>
+                                    <li>• Discord: #report-abuse channel</li>
+                                    <li>• In-game: Report button (coming soon)</li>
+                                </ul>
+                            </div>
+                            <div class="rounded-lg border border-electric-teal/50 bg-lichess-slate/20 p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-electric-teal mb-3">Get Support</h3>
+                                <p class="font-inter text-sm text-[#F5F7FA]/80 mb-4">
+                                    Need help with the game or have questions?
+                                </p>
+                                <ul class="font-inter text-sm text-[#F5F7FA]/80 space-y-2">
+                                    <li>• Playtest Support: <a href="mailto:playtest@chessarena.gg" class="text-electric-teal hover:underline">playtest@chessarena.gg</a></li>
+                                    <li>• Discord: #help channel</li>
+                                    <li>• FAQ: <a href="#" class="text-electric-teal hover:underline">chessarena.gg/faq</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Legal & Compliance -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Legal & Compliance</h2>
+                        <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                            <div class="space-y-4 font-inter text-sm text-[#F5F7FA]/80">
+                                <p>
+                                    <span class="text-tactical-gold font-bold">FTC Disclosure:</span> Content creators must disclose sponsored or paid placements. Use #ad or "Sponsored by Chess Arena" in posts.
+                                </p>
+                                <p>
+                                    <span class="text-tactical-gold font-bold">COPPA Compliance:</span> Chess Arena is intended for ages 13+. Players under 13 require parental consent.
+                                </p>
+                                <p>
+                                    <span class="text-tactical-gold font-bold">Privacy:</span> We collect minimal data for matchmaking and anti-cheat. See our <a href="#" class="text-electric-teal hover:underline">Privacy Policy</a>.
+                                </p>
+                                <p>
+                                    <span class="text-tactical-gold font-bold">DMCA:</span> Respect copyright. Don't use unlicensed music or art in streams/videos.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer class="border-t border-lichess-slate py-10 text-center">
+                        <div class="mb-4 flex justify-center gap-6 flex-wrap">
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="index.html">Home</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="assets.html">Assets</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="video.html">Video</a>
+                            <a class="font-jetbrains-mono text-electric-teal" href="safety.html">Safety</a>
+                        </div>
+                        <p class="font-inter text-sm text-[#F5F7FA]/60">Backed by Millions of Monsters · Makers Fund · Dune Ventures.</p>
+                        <p class="font-inter mt-4 text-xs text-[#F5F7FA]/40">Your Move</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

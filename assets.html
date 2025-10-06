@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Creative Assets - Chess Arena</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Chess Arena creative assets: ads, thumbnails, and memes for the Botez campaign."/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "midnight-navy": "#0D1B2A",
+                        "lichess-slate": "#415A77",
+                        "electric-teal": "#00C6AE",
+                        "tactical-gold": "#F8D57E",
+                        "alert-coral": "#FF6F61",
+                    },
+                    fontFamily: {
+                        "space-grotesk": ["Space Grotesk", "sans-serif"],
+                        "inter": ["Inter", "sans-serif"],
+                        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        'neon-glow': '0 0 5px #00C6AE, 0 0 10px #00C6AE, 0 0 20px #00C6AE, 0 0 40px #00C6AE',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Simple Analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+</head>
+<body class="bg-midnight-navy font-inter text-[#F5F7FA]">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-midnight-navy overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
+            <header class="px-4 md:px-10 lg:px-40 py-6 border-b border-lichess-slate">
+                <div class="flex justify-between items-center max-w-[960px] mx-auto">
+                    <a href="index.html" class="font-space-grotesk text-2xl font-bold text-electric-teal hover:opacity-80 transition-opacity">Chess Arena</a>
+                    <nav class="flex gap-6">
+                        <a href="index.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Home</a>
+                        <a href="assets.html" class="font-jetbrains-mono text-electric-teal">Assets</a>
+                        <a href="video.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Video</a>
+                        <a href="safety.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Safety</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-10">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                    <!-- Page Header -->
+                    <div class="mb-10">
+                        <h1 class="font-space-grotesk text-5xl font-bold leading-tight tracking-[-0.033em] text-white mb-4">
+                            Creative Assets
+                        </h1>
+                        <p class="font-inter text-lg leading-normal text-[#F5F7FA]/80">
+                            All campaign assets with UTM tracking IDs. Asset filenames match <code class="font-jetbrains-mono bg-lichess-slate/30 px-2 py-1 rounded">utm_content</code> values for performance tracking.
+                        </p>
+                    </div>
+
+                    <!-- Asset Tracking Workflow -->
+                    <div class="mb-12 rounded-lg border border-electric-teal/30 bg-lichess-slate/10 p-6">
+                        <h2 class="font-space-grotesk text-2xl font-bold text-electric-teal mb-4">
+                            Asset → UTM → KPI Workflow
+                        </h2>
+                        <div class="font-jetbrains-mono text-sm space-y-2 text-[#F5F7FA]/90">
+                            <p>1. <span class="text-tactical-gold">Design</span> asset in Figma</p>
+                            <p>2. <span class="text-tactical-gold">Export</span> to <code>vault/03-Figma/exports/</code> with descriptive name</p>
+                            <p>3. <span class="text-tactical-gold">Sync</span> via <code>scripts/sync-figma-exports.sh</code> → <code>website/assets/</code></p>
+                            <p>4. <span class="text-tactical-gold">Filename</span> (minus extension) = <code>utm_content</code> parameter</p>
+                            <p>5. <span class="text-tactical-gold">Track</span> performance in <code>vault/04-Data/Marketing_KPI_Template.xlsx</code></p>
+                        </div>
+                        <div class="mt-4 p-4 bg-midnight-navy/50 rounded border border-lichess-slate">
+                            <p class="font-jetbrains-mono text-xs text-tactical-gold mb-2">Example:</p>
+                            <p class="font-jetbrains-mono text-xs text-[#F5F7FA]/70">
+                                Filename: <code class="text-electric-teal">ad-A_accessibility.png</code><br/>
+                                UTM Link: <code class="text-electric-teal">?utm_content=ad-A_accessibility</code><br/>
+                                KPI Row: <code class="text-electric-teal">Creative = ad-A_accessibility</code>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Ad Variants -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Ad Variants</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/ad-A.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">ad-A_accessibility</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Platform:</span> Instagram</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1080×1080</p>
+                                        <p><span class="text-tactical-gold">ICP:</span> Competitive Chess Player</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/ad-B.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">ad-B_competitive</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Platform:</span> X/Twitter</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1200×628</p>
+                                        <p><span class="text-tactical-gold">ICP:</span> MOBA Grinder</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/ad-C.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">ad-C_casual</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Platform:</span> TikTok</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1080×1920</p>
+                                        <p><span class="text-tactical-gold">ICP:</span> Casual Crossover</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Thumbnails -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Thumbnails</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-video bg-cover bg-center" style="background-image: url('assets/thumb-A.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">thumb-A_dramatic</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Text Overlay:</span> "Think Fast"</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1280×720</p>
+                                        <p><span class="text-tactical-gold">Mood:</span> Dramatic/Intense</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-video bg-cover bg-center" style="background-image: url('assets/thumb-B.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">thumb-B_approachable</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Text Overlay:</span> "Your Move"</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1280×720</p>
+                                        <p><span class="text-tactical-gold">Mood:</span> Friendly/Accessible</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-video bg-cover bg-center" style="background-image: url('assets/thumb-C.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">thumb-C_meme</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Text Overlay:</span> "Botez Approved"</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1280×720</p>
+                                        <p><span class="text-tactical-gold">Mood:</span> Humor/Meme-forward</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Memes -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Memes</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/meme-1.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">meme-1_chess-rage</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Theme:</span> Chess rage quit → MOBA</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1080×1080</p>
+                                        <p><span class="text-tactical-gold">Alt-text:</span> ✅ Included</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/meme-2.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">meme-2_botez-gambit</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Theme:</span> Botez Gambit in real-time</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1080×1080</p>
+                                        <p><span class="text-tactical-gold">Alt-text:</span> ✅ Included</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                                <div class="aspect-square bg-cover bg-center" style="background-image: url('assets/meme-3.png')"></div>
+                                <div class="p-4">
+                                    <h3 class="font-jetbrains-mono text-base font-bold text-white mb-2">meme-3_elo-hell</h3>
+                                    <div class="font-inter text-sm text-[#F5F7FA]/70 space-y-1">
+                                        <p><span class="text-tactical-gold">Theme:</span> Elo hell crossover</p>
+                                        <p><span class="text-tactical-gold">Dimensions:</span> 1080×1080</p>
+                                        <p><span class="text-tactical-gold">Alt-text:</span> ✅ Included</p>
+                                        <p><span class="text-tactical-gold">Status:</span> 📝 Draft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Performance Metrics -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Performance Targets</h2>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr class="border-b border-lichess-slate">
+                                        <th class="font-jetbrains-mono text-left py-3 px-4 text-tactical-gold">Asset Type</th>
+                                        <th class="font-jetbrains-mono text-left py-3 px-4 text-tactical-gold">Target CTR</th>
+                                        <th class="font-jetbrains-mono text-left py-3 px-4 text-tactical-gold">Target CPC</th>
+                                        <th class="font-jetbrains-mono text-left py-3 px-4 text-tactical-gold">Tracking</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="font-inter text-sm">
+                                    <tr class="border-b border-lichess-slate/30">
+                                        <td class="py-3 px-4">Ads</td>
+                                        <td class="py-3 px-4">≥ 2%</td>
+                                        <td class="py-3 px-4">≤ $1.50</td>
+                                        <td class="py-3 px-4 font-jetbrains-mono text-xs">Simple Analytics + UTM</td>
+                                    </tr>
+                                    <tr class="border-b border-lichess-slate/30">
+                                        <td class="py-3 px-4">Thumbnails</td>
+                                        <td class="py-3 px-4">≥ 5%</td>
+                                        <td class="py-3 px-4">N/A (organic)</td>
+                                        <td class="py-3 px-4 font-jetbrains-mono text-xs">YouTube Analytics</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Memes</td>
+                                        <td class="py-3 px-4">≥ 3%</td>
+                                        <td class="py-3 px-4">N/A (organic)</td>
+                                        <td class="py-3 px-4 font-jetbrains-mono text-xs">Platform-specific</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer class="border-t border-lichess-slate py-10 text-center">
+                        <div class="mb-4 flex justify-center gap-6 flex-wrap">
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="index.html">Home</a>
+                            <a class="font-jetbrains-mono text-electric-teal" href="assets.html">Assets</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="video.html">Video</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="safety.html">Safety</a>
+                        </div>
+                        <p class="font-inter text-sm text-[#F5F7FA]/60">Backed by Millions of Monsters · Makers Fund · Dune Ventures.</p>
+                        <p class="font-inter mt-4 text-xs text-[#F5F7FA]/40">Your Move</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

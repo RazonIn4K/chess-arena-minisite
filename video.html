@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Video - Chess Arena</title>
+    <meta name="description" content="Chess Arena playtest video and teaser content."/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "midnight-navy": "#0D1B2A",
+                        "lichess-slate": "#415A77",
+                        "electric-teal": "#00C6AE",
+                        "tactical-gold": "#F8D57E",
+                        "alert-coral": "#FF6F61",
+                    },
+                    fontFamily: {
+                        "space-grotesk": ["Space Grotesk", "sans-serif"],
+                        "inter": ["Inter", "sans-serif"],
+                        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        'neon-glow': '0 0 5px #00C6AE, 0 0 10px #00C6AE, 0 0 20px #00C6AE, 0 0 40px #00C6AE',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Simple Analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+</head>
+<body class="bg-midnight-navy font-inter text-[#F5F7FA]">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-midnight-navy overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
+            <header class="px-4 md:px-10 lg:px-40 py-6 border-b border-lichess-slate">
+                <div class="flex justify-between items-center max-w-[960px] mx-auto">
+                    <a href="index.html" class="font-space-grotesk text-2xl font-bold text-electric-teal hover:opacity-80 transition-opacity">Chess Arena</a>
+                    <nav class="flex gap-6">
+                        <a href="index.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Home</a>
+                        <a href="assets.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Assets</a>
+                        <a href="video.html" class="font-jetbrains-mono text-electric-teal">Video</a>
+                        <a href="safety.html" class="font-jetbrains-mono text-[#F5F7FA]/80 hover:text-electric-teal transition-colors">Safety</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-10">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                    <!-- Page Header -->
+                    <div class="mb-10">
+                        <h1 class="font-space-grotesk text-5xl font-bold leading-tight tracking-[-0.033em] text-white mb-4">
+                            Video & Teaser
+                        </h1>
+                        <p class="font-inter text-lg leading-normal text-[#F5F7FA]/80">
+                            Watch the 20-second Chess Arena playtest teaser. Captions included for accessibility.
+                        </p>
+                    </div>
+
+                    <!-- Video Embed Section -->
+                    <section class="mb-12">
+                        <div class="rounded-lg border border-lichess-slate bg-midnight-navy overflow-hidden">
+                            <div class="aspect-video w-full">
+                                <iframe
+                                    class="w-full h-full"
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                    title="Chess Arena Playtest Teaser"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="p-6">
+                                <h2 class="font-space-grotesk text-2xl font-bold text-white mb-3">Chess Arena Playtest Teaser</h2>
+                                <p class="font-inter text-[#F5F7FA]/80 mb-4">
+                                    A 20-second introduction to Chess Arena's real-time, ability-driven gameplay. Watch Alexandra Botez showcase dodge mechanics, ability kits, and the final circle showdown.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm text-tactical-gold">
+                                    <span class="font-jetbrains-mono">✅ Captions available</span>
+                                    <span class="font-jetbrains-mono">• Duration: 0:20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Video Description -->
+                    <section class="mb-12 rounded-lg border border-electric-teal/30 bg-lichess-slate/10 p-6">
+                        <h2 class="font-space-grotesk text-2xl font-bold text-electric-teal mb-4">
+                            What to Expect
+                        </h2>
+                        <div class="space-y-3 text-[#F5F7FA]/90">
+                            <p class="font-inter">
+                                <span class="text-tactical-gold font-bold">0:00-0:05</span> — Hero shot: Chess pieces transforming into MOBA characters
+                            </p>
+                            <p class="font-inter">
+                                <span class="text-tactical-gold font-bold">0:06-0:12</span> — Gameplay montage: Dodging checkmates, casting abilities, lane control
+                            </p>
+                            <p class="font-inter">
+                                <span class="text-tactical-gold font-bold">0:13-0:17</span> — Final circle tension: Last player standing moment
+                            </p>
+                            <p class="font-inter">
+                                <span class="text-tactical-gold font-bold">0:18-0:20</span> — Botez quote + CTA: "Join the Playtest"
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Stream Guidelines -->
+                    <section class="mb-12">
+                        <h2 class="font-space-grotesk text-3xl font-bold text-white mb-6">Creator Stream Guidelines</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-tactical-gold mb-3">Lower Third Template</h3>
+                                <p class="font-inter text-sm text-[#F5F7FA]/80 mb-3">
+                                    "Chess Arena Playtest Live — Join via chessarena.gg"
+                                </p>
+                                <p class="font-inter text-xs text-[#F5F7FA]/60">
+                                    Font: Space Grotesk Bold • Accent: Electric Teal (#00C6AE)
+                                </p>
+                            </div>
+                            <div class="rounded-lg border border-lichess-slate bg-midnight-navy p-6">
+                                <h3 class="font-jetbrains-mono text-lg font-bold text-tactical-gold mb-3">Stream Callouts</h3>
+                                <ul class="font-inter text-sm text-[#F5F7FA]/80 space-y-2">
+                                    <li>• Showcase ability kits within 30 seconds</li>
+                                    <li>• Mention @chessarenagame during mid-roll</li>
+                                    <li>• Capture "final circle" moment for clips</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA Section -->
+                    <section class="mb-12 text-center">
+                        <div class="rounded-lg border border-electric-teal/50 bg-lichess-slate/20 p-8">
+                            <h2 class="font-space-grotesk text-3xl font-bold text-white mb-4">
+                                Ready to Play?
+                            </h2>
+                            <p class="font-inter text-lg text-[#F5F7FA]/80 mb-6">
+                                Join the playtest and start creating your own Chess Arena highlights.
+                            </p>
+                            <button class="flex h-12 min-w-[84px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-electric-teal px-8 text-midnight-navy text-base font-bold leading-normal tracking-[0.015em] transition-all duration-300 hover:shadow-neon-glow">
+                                <span class="truncate">Join the Playtest</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer class="border-t border-lichess-slate py-10 text-center">
+                        <div class="mb-4 flex justify-center gap-6 flex-wrap">
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="index.html">Home</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="assets.html">Assets</a>
+                            <a class="font-jetbrains-mono text-electric-teal" href="video.html">Video</a>
+                            <a class="font-jetbrains-mono text-[#F5F7FA]/80 transition-colors hover:text-electric-teal" href="safety.html">Safety</a>
+                        </div>
+                        <p class="font-inter text-sm text-[#F5F7FA]/60">Backed by Millions of Monsters · Makers Fund · Dune Ventures.</p>
+                        <p class="font-inter mt-4 text-xs text-[#F5F7FA]/40">Your Move</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
